@@ -1,0 +1,355 @@
+/* Animations CSS */
+
+/* Default Animation Transitions */
+.animate-text {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.animate-text.active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Staggered animation delay for hero content */
+.hero h1.active {
+  transition-delay: 0.3s;
+}
+
+.hero h2.active {
+  transition-delay: 0.5s;
+}
+
+.hero p.active {
+  transition-delay: 0.7s;
+}
+
+.hero-buttons.active {
+  transition-delay: 0.9s;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Slide In animations */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease-in-out;
+}
+
+.slide-in-right {
+  animation: slideInRight 1s ease-in-out;
+}
+
+.slide-in-up {
+  animation: slideInUp 1s ease-in-out;
+}
+
+/* Scroll Animation (AOS-like effect) */
+[data-aos] {
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+[data-aos="fade-up"] {
+  transform: translateY(50px);
+}
+
+[data-aos="fade-down"] {
+  transform: translateY(-50px);
+}
+
+[data-aos="fade-left"] {
+  transform: translateX(-50px);
+}
+
+[data-aos="fade-right"] {
+  transform: translateX(50px);
+}
+
+[data-aos="zoom-in"] {
+  transform: scale(0.9);
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: translate(0) scale(1);
+}
+
+/* Delay classes */
+[data-aos][data-aos-delay="100"].aos-animate {
+  transition-delay: 0.1s;
+}
+
+[data-aos][data-aos-delay="200"].aos-animate {
+  transition-delay: 0.2s;
+}
+
+[data-aos][data-aos-delay="300"].aos-animate {
+  transition-delay: 0.3s;
+}
+
+[data-aos][data-aos-delay="400"].aos-animate {
+  transition-delay: 0.4s;
+}
+
+[data-aos][data-aos-delay="500"].aos-animate {
+  transition-delay: 0.5s;
+}
+
+/* Pulse Animation for CTAs */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(228, 29, 54, 0.7);
+  }
+  
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(228, 29, 54, 0);
+  }
+  
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(228, 29, 54, 0);
+  }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+/* Rotate Animation */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate 8s linear infinite;
+}
+
+/* Text Reveal Animation */
+@keyframes textReveal {
+  0% {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+.text-reveal {
+  animation: textReveal 1s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+/* Button Hover Effect */
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+
+.btn:hover:after {
+  animation: ripple 1s ease-out;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0.5;
+  }
+  20% {
+    transform: scale(25, 25);
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(40, 40);
+  }
+}
+
+/* Loading Screen Animation */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.loading-screen.fade-out {
+  animation: fadeOut 0.5s ease-out forwards;
+}
+
+/* Stats Counter Animation */
+@keyframes countUp {
+  from {
+    content: "0";
+  }
+  to {
+    content: attr(data-target);
+  }
+}
+
+/* Image Hover Effect */
+.hover-zoom img {
+  transition: transform 0.5s ease;
+}
+
+.hover-zoom:hover img {
+  transform: scale(1.1);
+}
+
+/* Border Animation */
+@keyframes borderAnimation {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+}
+
+.border-animation {
+  position: relative;
+}
+
+.border-animation:before,
+.border-animation:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 2px solid transparent;
+}
+
+.border-animation:before {
+  border-top-color: var(--primary-color);
+  border-right-color: var(--primary-color);
+}
+
+.border-animation:after {
+  border-bottom-color: var(--primary-color);
+  border-left-color: var(--primary-color);
+}
+
+.border-animation:hover:before,
+.border-animation:hover:after {
+  width: 100%;
+  height: 100%;
+  transition: width 0.3s, height 0.3s, opacity 0.3s;
+}
+
+.border-animation:hover:before {
+  transition-delay: 0s, 0.3s, 0.6s;
+}
+
+.border-animation:hover:after {
+  transition-delay: 0.3s, 0s, 0.6s;
+}

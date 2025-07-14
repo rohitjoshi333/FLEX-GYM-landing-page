@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | FLEX Nepal - Premium Fitness Experience</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="header" class="scrolled">
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html">
+          <span class="logo-main">FLEX</span>
+          <span class="logo-sub">Nepal</span>
+        </a>
+      </div>
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#classes">Classes</a></li>
+          <li><a href="index.html#trainers">Trainers</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="index.html#schedule">Schedule</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="cta-button">
+        <a href="index.html#join-now" class="btn btn-primary">Join Now</a>
+      </div>
+      <div class="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav">
+    <div class="close-menu">
+      <i class="fas fa-times"></i>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#classes">Classes</a></li>
+      <li><a href="index.html#trainers">Trainers</a></li>
+      <li><a href="index.html#pricing">Pricing</a></li>
+      <li><a href="index.html#schedule">Schedule</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li class="mobile-cta"><a href="index.html#join-now" class="btn btn-primary">Join Now</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <section class="gallery-hero">
+      <div class="container">
+        <div class="gallery-hero-content">
+          <h1>FLEX Nepal Gallery</h1>
+          <p>Explore our world-class facilities, equipment, and vibrant community in the heart of Kathmandu</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section" style="background-color: rgb(255, 249, 249);">
+      <div class="container">
+        <div class="gallery-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="equipment">Equipment</button>
+          <button class="filter-btn" data-filter="classes">Classes</button>
+          <button class="filter-btn" data-filter="facilities">Facilities</button>
+          <button class="filter-btn" data-filter="members">Members</button>
+          <button class="filter-btn" data-filter="events">Events</button>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Equipment Images -->
+          <div class="gallery-item" data-category="equipment" data-aos="fade-up">
+            <div class="gallery-image">
+              <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Modern Gym Equipment">
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Modern Equipment</h3>
+                  <p>State-of-the-art fitness machines</p>
+                </div>
+                <button class="gallery-expand"><i class="fas fa-expand"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="equipment" data-aos="fade-up" data-aos-delay="100">
+            <div class="gallery-image">
+              <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Weight Training Area">
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Weight Training Zone</h3>
+                  <p>Professional grade weights and equipment</p>
+                </div>
+                <button class="gallery-expand"><i class="fas fa-expand"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="equipment" data-aos="fade-up" data-aos-delay="200">
+            <div class="gallery-image">
+              <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cardio Equipment">
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Cardio Section</h3>
+                  <p>Latest treadmills and cardio machines</p>
+                </div>
+                <button class="gallery-expand"><i class="fas fa-expand"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Classes Images -->
+          <div class="gallery-item" data-category="classes" data-aos="fade-up">
+            <div class="gallery-image">
+              <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1820&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Yoga Class">
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Yoga Classes</h3>
+                  <p>Traditional and modern yoga sessions</p>
+                </div>
+                <button class="gallery-expand"><i class="fas fa-expand"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="classes" data-aos="fade-up" data-aos-delay="100">
+            <div class="gallery-image">
+              <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="HIIT Training">
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>HIIT Training</h3>
+                  <p>High-intensity interval training sessions</p>
+                </div>
+                <button class="gallery-expand"><i class="fas fa-expand"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="classes" data-aos="fade-up" data-aos-delay="200">
+            <div class="gallery-image">
+              <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Group Training">
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Group Training</h3>
+                  <p>Motivating group workout sessions</p>
+                </div>
+                <button class="gallery-expand"><i class="fas fa-expand"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Facilities Images -->
+          <div class="gallery-item" data-category="facilities" data-aos="fade-up">
+            <div class="gallery-image">
+              <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=1675&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Locker Room">
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Premium Locker Rooms</h3>
+                  <p>Clean and spacious changing facilities</p>
+                </div>
+                <button class="gallery-expand"><i class="fas fa-expand"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="facilities" data-aos="fade-up" data-aos-delay="100">
+            <div class="gallery-image">
+              <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Reception Area">
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Reception & Lounge</h3>
+                  <p>Welcoming entrance and relaxation area</p>
+                </div>
+                <button class="gallery-expand"><i class="fas fa-expand"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="facilities" data-aos="fade-up" data-aos-delay="200">
+            <div class="gallery-image">
+              <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Juice Bar">
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Nutrition Bar</h3>
+                  <p>Healthy smoothies and protein shakes</p>
+                </div>
+                <button class="gallery-expand"><i class="fas fa-expand"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Members Images -->
+          <div class="gallery-item" data-category="members" data-aos="fade-up">
+            <div class="gallery-image">
+              <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Members Training">
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Members in Action</h3>
+                  <p>Our community working towards their goals</p>
+                </div>
+                <button class="gallery-expand"><i class="fas fa-expand"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="members" data-aos="fade-up" data-aos-delay="100">
+            <div class="gallery-image">
+              <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Personal Training">
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Personal Training</h3>
+                  <p>One-on-one sessions with expert trainers</p>
+                </div>
+                <button class="gallery-expand"><i class="fas fa-expand"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="members" data-aos="fade-up" data-aos-delay="200">
+            <div class="gallery-image">
+              <img src="https://images.unsplash.com/photo-1434682772747-f16d3ea162c3?q=80&w=1906&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Spin Class Members">
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Spin Class Energy</h3>
+                  <p>High-energy cycling sessions</p>
+                </div>
+                <button class="gallery-expand"><i class="fas fa-expand"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Events Images -->
+          <div class="gallery-item" data-category="events" data-aos="fade-up">
+            <div class="gallery-image">
+              <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fitness Challenge">
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Fitness Challenges</h3>
+                  <p>Monthly fitness competitions and events</p>
+                </div>
+                <button class="gallery-expand"><i class="fas fa-expand"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="events" data-aos="fade-up" data-aos-delay="100">
+            <div class="gallery-image">
+              <img src="https://images.unsplash.com/photo-1616803689943-5601631c7fec?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Workshop">
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Fitness Workshops</h3>
+                  <p>Educational sessions and seminars</p>
+                </div>
+                <button class="gallery-expand"><i class="fas fa-expand"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="events" data-aos="fade-up" data-aos-delay="200">
+            <div class="gallery-image">
+              <img src="https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3?q=80&w=1665&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Community Event">
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Community Events</h3>
+                  <p>Building connections within our fitness family</p>
+                </div>
+                <button class="gallery-expand"><i class="fas fa-expand"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="load-more-container">
+          <button class="btn btn-secondary load-more-btn">Load More Images</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Join Our Community?</h2>
+          <p>Experience FLEX Nepal's world-class facilities and vibrant fitness community in person.</p>
+          <div class="cta-buttons">
+            <a href="index.html#join-now" class="btn btn-primary">Start Your Journey</a>
+            <a href="index.html#contact" class="btn btn-secondary">Schedule a Tour</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Gallery Modal -->
+  <div class="gallery-modal" id="galleryModal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <img class="modal-image" id="modalImage" src="" alt="">
+      <div class="modal-info">
+        <h3 class="modal-title"></h3>
+        <p class="modal-description"></p>
+      </div>
+      <div class="modal-nav">
+        <button class="modal-prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="modal-next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <a href="index.html">
+              <span class="logo-main">FLEX</span>
+              <span class="logo-sub">Nepal</span>
+            </a>
+          </div>
+          <p>Nepal's premier fitness experience designed for results. Join our community and transform your life in the heart of Kathmandu.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#classes">Classes</a></li>
+            <li><a href="index.html#trainers">Trainers</a></li>
+            <li><a href="index.html#pricing">Pricing</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Classes</h4>
+          <ul class="footer-links">
+            <li><a href="#">Weight Training</a></li>
+            <li><a href="#">HIIT Training</a></li>
+            <li><a href="#">Traditional Yoga</a></li>
+            <li><a href="#">Nepali Dance Fitness</a></li>
+            <li><a href="#">Functional Training</a></li>
+            <li><a href="#">Spin Classes</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Newsletter</h4>
+          <p>Subscribe to our newsletter for the latest updates, fitness tips, and exclusive offers.</p>
+          <form class="footer-subscribe">
+            <input type="email" placeholder="Your Email Address">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 FLEX Nepal. All Rights Reserved.</p>
+        <ul class="footer-policy">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

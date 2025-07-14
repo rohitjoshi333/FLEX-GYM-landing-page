@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLEX Nepal | Premium Fitness Experience in Kathmandu</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/public/main.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/public/main.png">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="loading-screen">
+    <div class="loader">
+      <span>FLEX GYM</span>
+    </div>
+  </div>
+
+  <header id="header">
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html">
+          <span class="logo-main">FLEX</span>
+          <span class="logo-sub">Nepal</span>
+        </a>
+      </div>
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#classes">Classes</a></li>
+          <li><a href="#trainers">Trainers</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="cta-button">
+        <a href="#join-now" class="btn btn-primary">Join Now</a>
+      </div>
+      <div class="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav">
+    <div class="close-menu">
+      <i class="fas fa-times"></i>
+    </div>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#classes">Classes</a></li>
+      <li><a href="#trainers">Trainers</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li class="mobile-cta"><a href="#join-now" class="btn btn-primary">Join Now</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h1 class="animate-text">Transform Your Body</h1>
+        <h2 class="animate-text">Transform Your Life</h2>
+        <p class="animate-text">Nepal's Premier Fitness Experience in the Heart of Kathmandu</p>
+        <div class="hero-buttons animate-text">
+          <a href="#join-now" class="btn btn-primary">Get Started</a>
+          <a href="#about" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-overlay"></div>
+      <video autoplay muted loop playsinline id="hero-video">
+        <source src="/media/gymm.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <section id="featured" class="featured" style="background-color: rgb(255, 249, 249);">
+      <div class="container">
+        <div class="featured-grid">
+          <div class="featured-item" data-aos="fade-up">
+            <div class="icon">
+              <i class="fas fa-dumbbell"></i>
+            </div>
+            <h3>Modern Equipment</h3>
+            <p>State-of-the-art facilities imported from international brands for maximum results.</p>
+          </div>
+          <div class="featured-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Expert Trainers</h3>
+            <p>Certified Nepali and international trainers to guide your fitness journey.</p>
+          </div>
+          <div class="featured-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon">
+              <i class="fas fa-heartbeat"></i>
+            </div>
+            <h3>Diverse Classes</h3>
+            <p>From traditional yoga to modern HIIT training adapted for Nepali lifestyle.</p>
+          </div>
+          <div class="featured-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon">
+              <i class="fas fa-apple-alt"></i>
+            </div>
+            <h3>Nutrition Plans</h3>
+            <p>Customized nutrition guidance incorporating healthy Nepali cuisine.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text" data-aos="fade-right">
+            <div class="section-header">
+              <span class="subtitle">About Us</span>
+              <h2>Welcome to FLEX Nepal</h2>
+            </div>
+            <p>Established in 2018, FLEX Nepal has become Kathmandu's premier fitness destination. Located in the heart of the city, we combine international fitness standards with local understanding to create a unique wellness experience for the Nepali community.</p>
+            <p>Our mission is to make fitness accessible and enjoyable for everyone in Nepal, regardless of their fitness level or background. We believe in building a stronger, healthier Nepal one member at a time.</p>
+            <div class="stats-container">
+              <div class="stat-item">
+                <span class="count" data-target="6">0</span>
+                <span class="label">Years in Nepal</span>
+              </div>
+              <div class="stat-item">
+                <span class="count" data-target="15">0</span>
+                <span class="label">Expert Trainers</span>
+              </div>
+              <div class="stat-item">
+                <span class="count" data-target="2500">0</span>
+                <span class="label">Happy Members</span>
+              </div>
+            </div>
+            <a href="#classes" class="btn btn-primary">Explore Our Classes</a>
+          </div>
+          <div class="about-image" data-aos="fade-left">
+            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="FLEX Nepal Gym Interior">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="classes" class="classes" style="background-color: rgb(255, 249, 249);">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="subtitle">Our Programs</span>
+          <h2>Fitness Classes for Every Nepali</h2>
+          <p>Discover the perfect class to match your fitness goals and Nepali lifestyle.</p>
+        </div>
+        <div class="class-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="strength">Strength</button>
+          <button class="filter-btn" data-filter="cardio">Cardio</button>
+          <button class="filter-btn" data-filter="yoga">Yoga</button>
+          <button class="filter-btn" data-filter="dance">Dance</button>
+        </div>
+        <div class="classes-grid">
+          <div class="class-card" data-category="strength" data-aos="fade-up">
+            <div class="class-image">
+              <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Weight Training">
+              <div class="overlay">
+                <a href="#" class="btn btn-sm">Learn More</a>
+              </div>
+            </div>
+            <div class="class-details">
+              <h3>Weight Training</h3>
+              <div class="meta">
+                <span><i class="far fa-clock"></i> 60 mins</span>
+                <span><i class="fas fa-fire"></i> High Intensity</span>
+              </div>
+              <p>Build strength with our comprehensive weight training program designed for Nepali body types.</p>
+            </div>
+          </div>
+          <div class="class-card" data-category="cardio" data-aos="fade-up" data-aos-delay="100">
+            <div class="class-image">
+              <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="HIIT Training">
+              <div class="overlay">
+                <a href="#" class="btn btn-sm">Learn More</a>
+              </div>
+            </div>
+            <div class="class-details">
+              <h3>HIIT Training</h3>
+              <div class="meta">
+                <span><i class="far fa-clock"></i> 45 mins</span>
+                <span><i class="fas fa-fire"></i> High Intensity</span>
+              </div>
+              <p>High-intensity interval training perfect for busy Kathmandu professionals.</p>
+            </div>
+          </div>
+          <div class="class-card" data-category="yoga" data-aos="fade-up" data-aos-delay="200">
+            <div class="class-image">
+              <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1820&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Traditional Yoga">
+              <div class="overlay">
+                <a href="#" class="btn btn-sm">Learn More</a>
+              </div>
+            </div>
+            <div class="class-details">
+              <h3>Traditional Yoga</h3>
+              <div class="meta">
+                <span><i class="far fa-clock"></i> 75 mins</span>
+                <span><i class="fas fa-fire"></i> Low Intensity</span>
+              </div>
+              <p>Authentic Nepali yoga practices combining ancient wisdom with modern techniques.</p>
+            </div>
+          </div>
+          <div class="class-card" data-category="dance" data-aos="fade-up" data-aos-delay="300">
+            <div class="class-image">
+              <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Nepali Dance Fitness">
+              <div class="overlay">
+                <a href="#" class="btn btn-sm">Learn More</a>
+              </div>
+            </div>
+            <div class="class-details">
+              <h3>Nepali Dance Fitness</h3>
+              <div class="meta">
+                <span><i class="far fa-clock"></i> 60 mins</span>
+                <span><i class="fas fa-fire"></i> Medium Intensity</span>
+              </div>
+              <p>Fun fitness classes incorporating traditional Nepali dance movements.</p>
+            </div>
+          </div>
+          <div class="class-card" data-category="cardio" data-aos="fade-up" data-aos-delay="100">
+            <div class="class-image">
+              <img src="https://images.unsplash.com/photo-1434682772747-f16d3ea162c3?q=80&w=1906&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Spin Class">
+              <div class="overlay">
+                <a href="#" class="btn btn-sm">Learn More</a>
+              </div>
+            </div>
+            <div class="class-details">
+              <h3>Spin Class</h3>
+              <div class="meta">
+                <span><i class="far fa-clock"></i> 45 mins</span>
+                <span><i class="fas fa-fire"></i> High Intensity</span>
+              </div>
+              <p>High-energy cycling classes with Nepali and international music.</p>
+            </div>
+          </div>
+          <div class="class-card" data-category="strength" data-aos="fade-up" data-aos-delay="200">
+            <div class="class-image">
+              <img src="https://images.unsplash.com/photo-1616803689943-5601631c7fec?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Functional Training">
+              <div class="overlay">
+                <a href="#" class="btn btn-sm">Learn More</a>
+              </div>
+            </div>
+            <div class="class-details">
+              <h3>Functional Training</h3>
+              <div class="meta">
+                <span><i class="far fa-clock"></i> 60 mins</span>
+                <span><i class="fas fa-fire"></i> High Intensity</span>
+              </div>
+              <p>Functional movement training for everyday activities and sports.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="trainers" class="trainers">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="subtitle">Our Experts</span>
+          <h2>Professional Trainers</h2>
+          <p>Meet our team of certified fitness professionals from Nepal and abroad.</p>
+        </div>
+        <div class="trainers-grid">
+          <div class="trainer-card" data-aos="fade-up">
+            <div class="trainer-image">
+              <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Rajesh Shrestha">
+              <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+            <div class="trainer-details">
+              <h3>Rajesh Shrestha</h3>
+              <span class="specialty">Strength & Conditioning</span>
+              <p>8+ years experience training athletes and fitness enthusiasts across Nepal.</p>
+              <div class="certifications">
+                <span>NASM CPT</span>
+                <span>CrossFit L2</span>
+              </div>
+            </div>
+          </div>
+          <div class="trainer-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="trainer-image">
+              <img src="https://images.unsplash.com/photo-1595078475328-1ab05d0a6a0e?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sita Gurung">
+              <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+            <div class="trainer-details">
+              <h3>Sita Gurung</h3>
+              <span class="specialty">Yoga & Meditation</span>
+              <p>Traditional yoga master with deep knowledge of Nepali wellness practices.</p>
+              <div class="certifications">
+                <span>RYT 500</span>
+                <span>Meditation Teacher</span>
+              </div>
+            </div>
+          </div>
+          <div class="trainer-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="trainer-image">
+              <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Amit Tamang">
+              <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+            <div class="trainer-details">
+              <h3>Amit Tamang</h3>
+              <span class="specialty">HIIT & Cardio</span>
+              <p>High-energy trainer specializing in cardiovascular fitness and weight loss.</p>
+              <div class="certifications">
+                <span>ACE CPT</span>
+                <span>HIIT Specialist</span>
+              </div>
+            </div>
+          </div>
+          <div class="trainer-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="trainer-image">
+              <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Priya Rai">
+              <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+            <div class="trainer-details">
+              <h3>Priya Rai</h3>
+              <span class="specialty">Nutrition & Wellness</span>
+              <p>Certified nutritionist specializing in healthy Nepali cuisine and lifestyle.</p>
+              <div class="certifications">
+                <span>Certified Nutritionist</span>
+                <span>Wellness Coach</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials" style="background-color: rgb(255, 249, 249);">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="subtitle">Success Stories</span>
+          <h2>What Our Members Say</h2>
+        </div>
+        <div class="testimonial-slider">
+          <div class="testimonial-container">
+            <div class="testimonial active">
+              <div class="testimonial-image">
+                <img src="https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sunita Maharjan">
+              </div>
+              <div class="testimonial-content">
+                <div class="quote">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <p>FLEX Nepal completely transformed my approach to fitness. As a working mother in Kathmandu, I needed a gym that understood my schedule and cultural needs. The trainers are amazing and the community is so supportive. I've lost 25 kg and gained confidence I never had before!</p>
+                <div class="testimonial-info">
+                  <h4>Sunita Maharjan</h4>
+                  <span>Member for 2 years • Lalitpur</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="testimonial-image">
+                <img src="https://images.unsplash.com/photo-1488161628813-04466f872be2?q=80&w=1664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bikash Thapa">
+              </div>
+              <div class="testimonial-content">
+                <div class="quote">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <p>After trying multiple gyms in Kathmandu, FLEX Nepal is truly exceptional. The equipment is world-class, the trainers understand Nepali body types, and the nutrition advice incorporates our local foods. I'm stronger and healthier than I've ever been in my life.</p>
+                <div class="testimonial-info">
+                  <h4>Bikash Thapa</h4>
+                  <span>Member for 1.5 years • Kathmandu</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="testimonial-image">
+                <img src="https://images.unsplash.com/photo-1485218126466-34e6392ec754?q=80&w=1642&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kamala Shrestha">
+              </div>
+              <div class="testimonial-content">
+                <div class="quote">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <p>The yoga classes at FLEX Nepal are authentic and transformative. As someone who grew up with traditional practices, I appreciate how they blend ancient Nepali wisdom with modern fitness science. The meditation sessions have helped me manage stress from my corporate job.</p>
+                <div class="testimonial-info">
+                  <h4>Kamala Shrestha</h4>
+                  <span>Member for 3 years • Bhaktapur</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-controls">
+            <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <div class="testimonial-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="subtitle">Membership Plans</span>
+          <h2>Affordable Fitness for Every Nepali</h2>
+          <p>Flexible membership options designed for the Nepali lifestyle and budget.</p>
+        </div>
+        <div class="pricing-toggle">
+          <span>Monthly</span>
+          <label class="switch">
+            <input type="checkbox" id="pricing-toggle">
+            <span class="slider round"></span>
+          </label>
+          <span>Annually <span class="discount">Save 20%</span></span>
+        </div>
+        <div class="pricing-grid">
+          <div class="pricing-card" data-aos="fade-up">
+            <div class="pricing-header">
+              <h3>Basic</h3>
+              <div class="price">
+                <div class="monthly-price">
+                  <span class="currency">Rs.</span>
+                  <span class="amount">3,500</span>
+                  <span class="period">/month</span>
+                </div>
+                <div class="annual-price">
+                  <span class="currency">Rs.</span>
+                  <span class="amount">2,800</span>
+                  <span class="period">/month</span>
+                </div>
+              </div>
+              <p>Perfect for beginners</p>
+            </div>
+            <div class="pricing-features">
+              <ul>
+                <li><i class="fas fa-check"></i> Gym access (6AM - 8PM)</li>
+                <li><i class="fas fa-check"></i> Standard equipment usage</li>
+                <li><i class="fas fa-check"></i> 2 group classes per week</li>
+                <li><i class="fas fa-check"></i> Basic fitness assessment</li>
+                <li class="disabled"><i class="fas fa-times"></i> Personal training sessions</li>
+                <li class="disabled"><i class="fas fa-times"></i> Nutrition consultation</li>
+                <li class="disabled"><i class="fas fa-times"></i> Premium amenities</li>
+              </ul>
+            </div>
+            <div class="pricing-footer">
+              <a href="#join-now" class="btn btn-outline">Select Plan</a>
+            </div>
+          </div>
+          <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="100" style="background-color: rgb(255, 249, 249);">
+            <div class="pricing-header">
+              <div class="popular-badge">Most Popular</div>
+              <h3>Premium</h3>
+              <div class="price">
+                <div class="monthly-price">
+                  <span class="currency">Rs.</span>
+                  <span class="amount">6,500</span>
+                  <span class="period">/month</span>
+                </div>
+                <div class="annual-price">
+                  <span class="currency">Rs.</span>
+                  <span class="amount">5,200</span>
+                  <span class="period">/month</span>
+                </div>
+              </div>
+              <p>Ideal for committed fitness enthusiasts</p>
+            </div>
+            <div class="pricing-features">
+              <ul>
+                <li><i class="fas fa-check"></i> 24/7 gym access</li>
+                <li><i class="fas fa-check"></i> Full equipment usage</li>
+                <li><i class="fas fa-check"></i> Unlimited group classes</li>
+                <li><i class="fas fa-check"></i> Comprehensive fitness assessment</li>
+                <li><i class="fas fa-check"></i> 2 personal training sessions/month</li>
+                <li><i class="fas fa-check"></i> Basic nutrition consultation</li>
+                <li class="disabled"><i class="fas fa-times"></i> Premium amenities</li>
+              </ul>
+            </div>
+            <div class="pricing-footer">
+              <a href="#join-now" class="btn btn-primary">Select Plan</a>
+            </div>
+          </div>
+          <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing-header">
+              <h3>Elite</h3>
+              <div class="price">
+                <div class="monthly-price">
+                  <span class="currency">Rs.</span>
+                  <span class="amount">9,500</span>
+                  <span class="period">/month</span>
+                </div>
+                <div class="annual-price">
+                  <span class="currency">Rs.</span>
+                  <span class="amount">7,600</span>
+                  <span class="period">/month</span>
+                </div>
+              </div>
+              <p>The ultimate fitness experience</p>
+            </div>
+            <div class="pricing-features">
+              <ul>
+                <li><i class="fas fa-check"></i> 24/7 gym access</li>
+                <li><i class="fas fa-check"></i> Full equipment usage</li>
+                <li><i class="fas fa-check"></i> Unlimited group classes</li>
+                <li><i class="fas fa-check"></i> Advanced fitness assessment</li>
+                <li><i class="fas fa-check"></i> 4 personal training sessions/month</li>
+                <li><i class="fas fa-check"></i> Advanced nutrition planning</li>
+                <li><i class="fas fa-check"></i> Premium amenities & spa access</li>
+              </ul>
+            </div>
+            <div class="pricing-footer">
+              <a href="#join-now" class="btn btn-outline">Select Plan</a>
+            </div>
+          </div>
+        </div>
+        <div class="pricing-note text-center">
+          <p>All plans include access to locker rooms and basic amenities. Flexible payment options available.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule" class="schedule" style="background-color: rgb(255, 249, 249);">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="subtitle">Weekly Schedule</span>
+          <h2>Class Timetable</h2>
+          <p>Find the perfect class that fits your schedule in Kathmandu.</p>
+        </div>
+        <div class="schedule-tabs">
+          <div class="schedule-nav">
+            <button class="schedule-day active" data-day="monday">Monday</button>
+            <button class="schedule-day" data-day="tuesday">Tuesday</button>
+            <button class="schedule-day" data-day="wednesday">Wednesday</button>
+            <button class="schedule-day" data-day="thursday">Thursday</button>
+            <button class="schedule-day" data-day="friday">Friday</button>
+            <button class="schedule-day" data-day="saturday">Saturday</button>
+            <button class="schedule-day" data-day="sunday">Sunday</button>
+          </div>
+          <div class="schedule-content">
+            <div class="schedule-table active" data-day="monday">
+              <div class="schedule-item">
+                <div class="time">06:00 - 07:00</div>
+                <div class="class-info">
+                  <h4>Morning Yoga</h4>
+                  <span class="trainer">Sita G.</span>
+                </div>
+                <div class="class-category yoga">Yoga</div>
+              </div>
+              <div class="schedule-item">
+                <div class="time">09:00 - 10:00</div>
+                <div class="class-info">
+                  <h4>HIIT Training</h4>
+                  <span class="trainer">Amit T.</span>
+                </div>
+                <div class="class-category cardio">Cardio</div>
+              </div>
+              <div class="schedule-item">
+                <div class="time">12:00 - 13:00</div>
+                <div class="class-info">
+                  <h4>Weight Training</h4>
+                  <span class="trainer">Rajesh S.</span>
+                </div>
+                <div class="class-category strength">Strength</div>
+              </div>
+              <div class="schedule-item">
+                <div class="time">17:30 - 18:30</div>
+                <div class="class-info">
+                  <h4>Nepali Dance Fitness</h4>
+                  <span class="trainer">Priya R.</span>
+                </div>
+                <div class="class-category dance">Dance</div>
+              </div>
+              <div class="schedule-item">
+                <div class="time">19:00 - 20:15</div>
+                <div class="class-info">
+                  <h4>Evening Yoga</h4>
+                  <span class="trainer">Sita G.</span>
+                </div>
+                <div class="class-category yoga">Yoga</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="join-now" class="join-now">
+      <div class="container">
+        <div class="join-grid">
+          <div class="join-image" data-aos="fade-right">
+            <img src="https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3?q=80&w=1665&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Join FLEX Nepal">
+          </div>
+          <div class="join-form" data-aos="fade-left">
+            <div class="form-header">
+              <h2>Start Your Fitness Journey Today</h2>
+              <p>Fill out the form below and one of our team members will contact you shortly.</p>
+            </div>
+            <form id="membership-form">
+              <div class="form-group">
+                <label for="name">Full Name (पूरा नाम)</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number (फोन नम्बर)</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+              <div class="form-group">
+                <label for="membership">Preferred Membership</label>
+                <select id="membership" name="membership">
+                  <option value="basic">Basic - Rs. 3,500/month</option>
+                  <option value="premium" selected>Premium - Rs. 6,500/month</option>
+                  <option value="elite">Elite - Rs. 9,500/month</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Additional Information</label>
+                <textarea id="message" name="message" placeholder="Tell us about your fitness goals..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Submit Request</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="subtitle">Get In Touch</span>
+          <h2>Contact FLEX Nepal</h2>
+          <p>Visit us in Kathmandu or get in touch with our team.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info" data-aos="fade-right">
+            <div class="info-item">
+              <div class="icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h4>Our Location</h4>
+                <p>New Baneshwor, Kathmandu<br>Nepal 44600</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div>
+                <h4>Phone Number</h4>
+                <p>+977-1-4567890<br>+977-9841234567</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h4>Email Address</h4>
+                <p>info@flexnepal.com<br>support@flexnepal.com</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div>
+                <h4>Working Hours</h4>
+                <p>Monday-Friday: 5:30 AM - 10:00 PM<br>Saturday-Sunday: 6:00 AM - 9:00 PM</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form" data-aos="fade-left">
+            <form id="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name">Your Name</label>
+                  <input type="text" id="contact-name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Your Email</label>
+                  <input type="email" id="contact-email" name="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" name="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" rows="6" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="map-section">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.6949953064157!2d85.32743831506213!3d27.69287998279441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb199a06c2eaf9%3A0xc5670a9173e161de!2sNew%20Baneshwor%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1642234567890!5m2!1sen!2snp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <a href="index.html">
+              <span class="logo-main">FLEX</span>
+              <span class="logo-sub">Nepal</span>
+            </a>
+          </div>
+          <p>Nepal's premier fitness experience designed for results. Join our community and transform your life in the heart of Kathmandu.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#classes">Classes</a></li>
+            <li><a href="#trainers">Trainers</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Classes</h4>
+          <ul class="footer-links">
+            <li><a href="#">Weight Training</a></li>
+            <li><a href="#">HIIT Training</a></li>
+            <li><a href="#">Traditional Yoga</a></li>
+            <li><a href="#">Nepali Dance Fitness</a></li>
+            <li><a href="#">Functional Training</a></li>
+            <li><a href="#">Spin Classes</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Newsletter</h4>
+          <p>Subscribe to our newsletter for the latest updates, fitness tips, and exclusive offers.</p>
+          <form class="footer-subscribe">
+            <input type="email" placeholder="Your Email Address">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 FLEX Nepal. All Rights Reserved.</p>
+        <ul class="footer-policy">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/testimonials.js"></script>
+  <script src="js/pricing.js"></script>
+  <script src="js/classes.js"></script>
+  <script src="js/counter.js"></script>
+</body>
+</html>
